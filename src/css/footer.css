@@ -56,12 +56,9 @@ margin-bottom: 24px;
 
 .nav-item{
 font-size: 18px;
-color: #191919;;
+color: #191919;
+}
 
-@media screen and (min-width >= 768px){
-font-size:16px;
-}
-}
 
 .nav-link{
 display:block;
@@ -148,5 +145,3 @@ width:303px;
 align-items: flex-start;
 }
 }
-=======
->>>>>>> main
