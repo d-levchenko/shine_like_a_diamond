@@ -3,19 +3,25 @@
     padding-bottom: 64px;
 }
 
-.section-benefits .container {}
 
 .benefits-title {
-    font-family: "Sora", sans-serif;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 36px;
     line-height: 120%;
     letter-spacing: -0.01em;
     text-align: center;
-    color: #000;
+    color: var(--color-neutral-darkest);
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (min-width: 768px) {
+        max-width: 704px;
+    }
     
     @media only screen and (min-width: 1440px) {
         font-size: 40px;
+        max-width: 870px;
     }
 }
 
@@ -28,33 +34,39 @@
    
     @media only screen and (min-width: 1440px) {
       flex-direction: row;
+      
     }
 }
 
 .benefits-list-item {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--opacity-neutral-darkest-20);
     padding: 32px 12px;
-    background-color: #f2f2f2;
+    background-color: var(--color-neutral-lightest);
+   
+    
+    @media only screen and (min-width: 1440px) {
+        flex-basis: calc((100% - 64px) / 3);
+    }
 
 }
 
 .benefits-list-item-title {
-    font-family: "Sora", sans-serif;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: -0.01em;
     text-align: center;
-    color: #000;
+    color: var(--color-neutral-darkest);
 
     margin-bottom: 24px;
 }
 
 .benefits-list-item-text {
-    font-family: "Mulish", sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #000;
+    color: var(--color-neutral-darkest);
 }
