@@ -1,21 +1,151 @@
-.footer {
-  padding: 20px 0;
+
+.footer{
+padding-top:80px;
+padding-bottom:80px;
+background-color: var(--color-scheme-1-background);
 }
-.footer-desc {
-  text-align: center;
+
+.footer .container{
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
 }
-.footer-link {
-  position: relative;
+
+
+.logo-link{
+display:flex;
+justify-content: center;
+margin-bottom: 32px;
+padding:15px 7px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.logo-icon{
+width: 201px;
+height: 62px;
+fill: #191919;;
+}
+
+.socials-list{
+display:flex;
+justify-content:center;
+align-items:center;
+gap: 12px;
+margin-bottom: 64px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  line-height: 0;
+}
+
+.socials-icon{
+width:32px;
+height:32px;
+}
+
+.nav-list{
+display:flex;
+flex-direction:column;
+gap: 32px;
+margin-bottom: 24px;
+}
+
+.nav-item{
+font-size: 18px;
+color: #191919;;
+
+@media screen and (min-width >= 768px){
+font-size:16px;
+}
+}
+
+.nav-link{
+display:block;
+padding:4px 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+text-decoration: underline;
+}
+
+.nav-link:active {
+ color: #8668c7;
+text-decoration:none;
+}
+
+
+
+.policy-wrapper{
+display:flex;
+align-items:flex-start;
+justify-content: center;
+border-top: 2px solid rgba(0, 0, 0, 0.2);;
+width:100%;
+}
+
+.privacy-policy-text{
+padding-top:32px;
+font-size: 14px;
+color: #191919;;
+}
+
+
+@media screen and (min-width: 768px) {
+.logo-link{
+
+  padding: 23px 12px;
+}
+
+.logo-icon{
+width: 317px;
+  height: 98px;
+}
+
+.nav-item{
+font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1440px){
+.logo-link{
+padding:4px 6px;
+}
+
+.logo-icon{
+width:78px;
+height:24px;
+}
+
+.footer-wrapper{
+width:100%;
+display:flex;
+justify-content: space-between;
+}
+
+.icon-footer-group{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+
+.socials-link{
+width:24px;
+height:24px;
+}
+
+.socials-icon{
+width:24px;
+height:24px;
+}
+
+.nav-list{
+width:303px;
+align-items: flex-start;
+}
 }
