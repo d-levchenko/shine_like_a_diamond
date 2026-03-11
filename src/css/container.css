@@ -7,22 +7,14 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-<<<<<<< footer
-
-=======
     padding: 0 32px;
->>>>>>> main
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-<<<<<<< footer
-
-=======
     padding: 0 64px;
->>>>>>> main
   }
 }
 
