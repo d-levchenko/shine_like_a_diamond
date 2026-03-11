@@ -22,10 +22,58 @@
       ),
       url('../images/header-mobile@2x.jpeg');
   }
+
+  /* ---- TABLET ---- */
+  @media screen and (min-width: 768px) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      url('../images/header-tablet.jpeg');
+    @media screen and (min-resolution: 192dpi) {
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--opacity-neutral-darkest-40),
+          var(--opacity-neutral-darkest-40)
+        ),
+        url('../images/header-tablet@2x.jpeg');
+    }
+  }
+
+  /* ---- DESCKTOP ---- */
+  @media screen and (min-width: 1440px) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      url('../images/header-desktop.jpeg');
+    @media screen and (min-resolution: 192dpi) {
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--opacity-neutral-darkest-40),
+          var(--opacity-neutral-darkest-40)
+        ),
+        url('../images/header-desktop@2x.jpeg');
+    }
+  }
 }
 
 .hero-container {
   padding: 160px 20px 152px;
+
+  @media screen and (min-width: 768px) {
+    padding: 160px 160px 435px 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 224px 800px 360px 64px;
+  }
 }
 
 .hero-title {
@@ -39,6 +87,10 @@
   letter-spacing: -0.01em;
 
   color: var(--color-white);
+
+  @media screen and (min-width: 1440px) {
+    font-size: 56px;
+  }
 }
 
 .hero-text {
@@ -71,6 +123,14 @@
   transition:
     background 250ms linear,
     border 250ms linear;
+
+  @media screen and (min-width: 768px) {
+    width: 217px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 192px;
+  }
 }
 
 .hero-btn:hover,
