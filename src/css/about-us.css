@@ -1,0 +1,104 @@
+.about-us-section {
+  padding: 56px 0;
+  background: var(--color-scheme-2-background);
+
+  @media screen and (min-width: 768px) {
+    padding: 112px 0;
+  }
+}
+
+.about-us-img {
+  margin-bottom: 32px;
+}
+
+.about-us-title {
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-2-text);
+}
+
+.about-us-description {
+  margin-bottom: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-scheme-2-text);
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-us-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.about-us-list-item-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-scheme-2-text);
+}
+
+.about-us-list-item:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  mask-image: url('../images/leaf.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.about-us-list-item:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  mask-image: url('../images/donate-heart.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.about-us-list-item:nth-child(3)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  mask-image: url('../images/book.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us-section .container {
+    display: flex;
+    gap: 32px;
+  }
+
+  .about-us-img {
+    margin: 0;
+  }
+
+  .about-us-wrapper {
+    max-width: 640px;
+  }
+
+  .about-us-title {
+    font-size: 48px;
+  }
+}
