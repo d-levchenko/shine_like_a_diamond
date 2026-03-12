@@ -1,43 +1,122 @@
 <section class="section about-us-section" id="about">
-    <div class="container">
-        <picture>
-            <source media="(min-width: 1440px)" srcset="
-          ../images/about-image-desctop.jpeg    1x,
-          ../images/about-image-desctop@2x.jpeg 2x
-        " sizes="(min-width: 1440px) 640px" />
-            <source media="(min-width: 768px)" srcset="
-          ../images/about-image-tablet.jpeg    1x,
-          ../images/about-image-tablet@2x.jpeg 2x
-        " sizes="(max-width: 1439px) 704px, 640px" />
+  <div class="container">
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/avif/about-image-desktop.avif    1x,
+          /images/avif/about-image-desktop@2x.avif 2x
+        "
+        sizes="(min-width: 1440px) 640px"
+        type="image/avif"
+      />
 
-            <source media="(max-width: 767px)" srcset="
-          ../images/about-image-mobile.jpeg    1x,
-          ../images/about-image-mobile@2x.jpeg 2x
-        " sizes="(max-width: 767px) 335px, 704px" />
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/webp/about-image-desktop.webp    1x,
+          /images/webp/about-image-desktop@2x.webp 2x
+        "
+        sizes="(min-width: 1440px) 640px"
+        type="image/webp"
+      />
 
-            <img class="about-us-img" src="../images/about-image-mobile.jpeg" alt="About us image" />
-        </picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/jpeg/about-image-desktop.jpeg    1x,
+          /images/jpeg/about-image-desktop@2x.jpeg 2x
+        "
+        sizes="(min-width: 1440px) 640px"
+      />
 
-        <div class="about-us-wrapper">
-            <h2 class="about-us-title">The Artistry Behind Handmade Jewelry</h2>
-            <p class="about-us-description">
-                Handmade Jewelry began as a passion project, inspired by the beauty of
-                nature and the desire to create meaningful pieces. Each item is crafted
-                with love, reflecting our commitment to sustainability and the unique
-                story of its maker.
-            </p>
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/avif/about-image-tablet.avif    1x,
+          /images/avif/about-image-tablet@2x.avif 2x
+        "
+        sizes="(max-width: 1439px) 704px, 640px"
+        type="image/avif"
+      />
 
-            <ul class="about-us-list">
-                <li class="about-us-list-item">
-                    <p class="about-us-list-item-text">Inspired by Nature</p>
-                </li>
-                <li class="about-us-list-item">
-                    <p class="about-us-list-item-text">Handcrafted with Love</p>
-                </li>
-                <li class="about-us-list-item">
-                    <p class="about-us-list-item-text">Every Piece Tells a Story</p>
-                </li>
-            </ul>
-        </div>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/webp/about-image-tablet.webp    1x,
+          /images/webp/about-image-tablet@2x.webp 2x
+        "
+        sizes="(max-width: 1439px) 704px, 640px"
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/jpeg/about-image-tablet.jpeg    1x,
+          /images/jpeg/about-image-tablet@2x.jpeg 2x
+        "
+        sizes="(max-width: 1439px) 704px, 640px"
+      />
+
+      <!-- mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /images/avif/about/about-image-mobile.avif    1x,
+          /images/avif/about/about-image-mobile@2x.avif 2x
+        "
+        sizes="(max-width: 767px) 335px, 704px"
+        type="image/avif"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /images/webp/about/about-image-mobile.webp    1x,
+          /images/webp/about/about-image-mobile@2x.webp 2x
+        "
+        sizes="(max-width: 767px) 335px, 704px"
+        type="image/webp"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /images/jpeg/about/about-image-mobile.jpeg    1x,
+          /images/jpeg/about/about-image-mobile@2x.jpeg 2x
+        "
+        sizes="(max-width: 767px) 335px, 704px"
+      />
+
+      <img
+        class="about-us-img"
+        src="/images/jpeg/about/about-image-mobile.jpeg"
+        alt="About us image"
+      />
+    </picture>
+
+    <div class="about-us-wrapper">
+      <h2 class="about-us-title">The Artistry Behind Handmade Jewelry</h2>
+      <p class="about-us-description">
+        Handmade Jewelry began as a passion project, inspired by the beauty of
+        nature and the desire to create meaningful pieces. Each item is crafted
+        with love, reflecting our commitment to sustainability and the unique
+        story of its maker.
+      </p>
+
+      <ul class="about-us-list">
+        <li class="about-us-list-item">
+          <p class="about-us-list-item-text">Inspired by Nature</p>
+        </li>
+        <li class="about-us-list-item">
+          <p class="about-us-list-item-text">Handcrafted with Love</p>
+        </li>
+        <li class="about-us-list-item">
+          <p class="about-us-list-item-text">Every Piece Tells a Story</p>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>
