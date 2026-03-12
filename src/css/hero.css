@@ -1,8 +1,6 @@
-.hero {
-  background-color: var(--color-neutral);
-}
-
 .hero-container {
+  background-color: var(--color-neutral);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
