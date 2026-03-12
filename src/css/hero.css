@@ -11,7 +11,7 @@
       var(--opacity-neutral-darkest-40),
       var(--opacity-neutral-darkest-40)
     ),
-    url('../images/hero-mobile.jpeg');
+    url('../images/jpeg/hero/hero-mobile.jpeg');
 
   @media screen and (min-resolution: 192dpi) {
     max-width: 768px;
@@ -21,7 +21,7 @@
         var(--opacity-neutral-darkest-40),
         var(--opacity-neutral-darkest-40)
       ),
-      url('../images/hero-mobile@2x.jpeg');
+      url('../images/jpeg/hero/hero-mobile@2x.jpeg');
   }
 
   /* ---- TABLET ---- */
@@ -32,7 +32,7 @@
         var(--opacity-neutral-darkest-40),
         var(--opacity-neutral-darkest-40)
       ),
-      url('../images/hero-tablet.jpeg');
+      url('../images/jpeg/hero/hero-tablet.jpeg');
     @media screen and (min-resolution: 192dpi) {
       background-image:
         linear-gradient(
@@ -40,7 +40,7 @@
           var(--opacity-neutral-darkest-40),
           var(--opacity-neutral-darkest-40)
         ),
-        url('../images/hero-tablet@2x.jpeg');
+        url('../images/jpeg/hero/hero-tablet@2x.jpeg');
     }
   }
 
@@ -52,7 +52,7 @@
         var(--opacity-neutral-darkest-40),
         var(--opacity-neutral-darkest-40)
       ),
-      url('../images/hero-desktop.jpeg');
+      url('../images/jpeg/hero/hero-desktop.jpeg');
     @media screen and (min-resolution: 192dpi) {
       background-image:
         linear-gradient(
@@ -60,7 +60,7 @@
           var(--opacity-neutral-darkest-40),
           var(--opacity-neutral-darkest-40)
         ),
-        url('../images/hero-desktop@2x.jpeg');
+        url('../images/jpeg/hero/hero-desktop@2x.jpeg');
     }
   }
 }
