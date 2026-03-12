@@ -1,0 +1,166 @@
+.hero {
+  background-color: var(--color-neutral);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--opacity-neutral-darkest-40),
+      var(--opacity-neutral-darkest-40)
+    ),
+    image-set(
+      url('../images/avif/hero/hero-mobile.avif') type('image/avif'),
+      url('../images/webp/hero/hero-mobile.webp') type('image/webp'),
+      url('../images/jpeg/hero/hero-mobile.jpeg') type('image/jpeg')
+    );
+
+  @media screen and (min-resolution: 192dpi) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      image-set(
+        url('../images/avif/hero/hero-mobile@2x.avif') type('image/avif'),
+        url('../images/webp/hero/hero-mobile@2x.webp') type('image/webp'),
+        url('../images/jpeg/hero/hero-mobile@2x.jpeg') type('image/jpeg')
+      );
+  }
+
+  /* ---- TABLET ---- */
+  @media screen and (min-width: 768px) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      image-set(
+        url('../images/avif/hero/hero-tablet.avif') type('image/avif'),
+        url('../images/webp/hero/hero-tablet.webp') type('image/webp'),
+        url('../images/jpeg/hero/hero-tablet.jpeg') type('image/jpeg')
+      );
+    @media screen and (min-resolution: 192dpi) {
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--opacity-neutral-darkest-40),
+          var(--opacity-neutral-darkest-40)
+        ),
+        image-set(
+          url('../images/avif/hero/hero-tablet@2x.avif') type('image/avif'),
+          url('../images/webp/hero/hero-tablet@2x.webp') type('image/webp'),
+          url('../images/jpeg/hero/hero-tablet@2x.jpeg') type('image/jpeg')
+        );
+    }
+  }
+
+  /* ---- DESCKTOP ---- */
+  @media screen and (min-width: 1440px) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      image-set(
+        url('../images/avif/hero/hero-desktop.avif') type('image/avif'),
+        url('../images/webp/hero/hero-desktop.webp') type('image/webp'),
+        url('../images/jpeg/hero/hero-desktop.jpeg') type('image/jpeg')
+      );
+    @media screen and (min-resolution: 192dpi) {
+      background-image:
+        linear-gradient(
+          to bottom,
+          var(--opacity-neutral-darkest-40),
+          var(--opacity-neutral-darkest-40)
+        ),
+        image-set(
+          url('../images/avif/hero/hero-desktop@2x.avif') type('image/avif'),
+          url('../images/webp/hero/hero-desktop@2x.webp') type('image/webp'),
+          url('../images/jpeg/hero/hero-desktop@2x.jpeg') type('image/jpeg')
+        );
+    }
+  }
+}
+
+.hero-container {
+  padding: 160px 20px 152px;
+
+  @media screen and (min-width: 768px) {
+    padding: 160px 160px 435px 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 224px 800px 360px 64px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 24px;
+
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  color: var(--color-white);
+
+  @media screen and (min-width: 1440px) {
+    font-size: 56px;
+  }
+}
+
+.hero-text {
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 36px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: var(--color-neutral-darkest);
+
+  border: 1px solid var(--color-laser);
+  cursor: pointer;
+  background: var(--color-laser);
+
+  transition:
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 217px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 192px;
+  }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  border: 1px solid var(--color-laser);
+  background: var(--color-scheme-1-background);
+}
