@@ -70,6 +70,15 @@
   margin-bottom: 24px;
 }
 
+.testimonials-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.testimonials-icon {
+  fill: var(--color-scheme-1-background);
+}
+
 .testimonials-review {
   margin-bottom: 24px;
   font-family: var(--font-family);
