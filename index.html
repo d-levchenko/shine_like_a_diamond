@@ -32,7 +32,7 @@
     />
 
     <!-- external css -->
-    <link rel="stylesheet" crossorigin href="/HandmadeJewelery/assets/index-Bfg9ZoeE.css">
+    <link rel="stylesheet" crossorigin href="/HandmadeJewelery/assets/index-DXYHqYNt.css">
   </head>
 
   <body>
@@ -754,10 +754,12 @@
   </div>
 </section>
 
-      <section class="contacts-section">
+      <section class="section" id="contacts">
   <div class="container">
-    <h3 class="section-subtitle">Connect</h3>
-    <h2 class="section-title">Order your unique jewelry</h2>
+    <div class="title-wrapper">
+      <h2 class="section-title">Order your unique jewelry</h2>
+      <h3 class="section-subtitle">Connect</h3>
+    </div>
     <p class="section-paragraph">We'd love to hear more details from you!</p>
     <div class="contacts-wrapper">
       <div class="address-wrapper">
@@ -765,7 +767,7 @@
           <ul class="contacts-list">
             <li class="contact-item">
               <svg class="contacts-svg" width="32" height="32">
-                <use href="../images/sprite.svg#icon-envelope"></use>
+                <use href="/HandmadeJewelery/assets/sprite-DDrvRrev.svg#icon-envelope"></use>
               </svg>
               <span class="contact-label">Email</span>
               <a
@@ -778,7 +780,7 @@
 
             <li class="contact-item">
               <svg class="contacts-svg" width="32" height="32">
-                <use href="../images/sprite.svg#icon-phone"></use>
+                <use href="/HandmadeJewelery/assets/sprite-DDrvRrev.svg#icon-phone"></use>
               </svg>
               <span class="contact-label">Phone</span>
               <a
@@ -791,7 +793,7 @@
 
             <li class="contact-item">
               <svg class="contacts-svg" width="32" height="32">
-                <use href="../images/sprite.svg#icon-map"></use>
+                <use href="/HandmadeJewelery/assets/sprite-DDrvRrev.svg#icon-map"></use>
               </svg>
               <span class="contact-label">Office</span>
               <a
@@ -809,10 +811,10 @@
         <form class="contact-form">
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-name"
-              >Name*</label
-            >
+              >Name*
+            </label>
             <input
-              class="contact-form-field-input"
+              class="contact-form-field-input name-input"
               id="user-name"
               type="text"
               name="user-name"
@@ -820,13 +822,14 @@
               pattern="^[a-zA-Z\s\.]{5,28}$"
               required
             />
+            <span class="error-message">Error Text</span>
           </div>
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-tel"
               >Phone*</label
             >
             <input
-              class="contact-form-field-input"
+              class="contact-form-field-input tel-input"
               id="user-tel"
               type="tel"
               name="user-tel"
@@ -834,13 +837,14 @@
               pattern="^\+[0-9\s]{14}$"
               required
             />
+            <span class="error-message">Please enter a valid phone number</span>
           </div>
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-message"
               >Describe what you want</label
             >
             <textarea
-              class="form-field-message"
+              class="contact-form-field-message"
               name="user-message"
               id="user-message"
               placeholder="Type your message..."
