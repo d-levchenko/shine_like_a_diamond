@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "shine_like_a_diamond",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/HandmadeJewelery/",
+    "build": "vite build --base=/shine_like_a_diamond/",
     "preview": "vite preview"
   },
   "devDependencies": {

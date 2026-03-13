@@ -8,7 +8,7 @@ collections.
 ## 🔗 Live Page
 
 Check our live page here:
-[View Project](https://d-levchenko.github.io/HandmadeJewelery/)
+[View Project](https://d-levchenko.github.io/shine_like_a_diamond/)
 
 ## ✨ Features
 
@@ -33,7 +33,7 @@ Check our live page here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/d-levchenko/HandmadeJewelery.git
+   git clone https://github.com/d-levchenko/shine_like_a_diamond.git
    ```
 2. Install Node.js for your system
    ```bash
