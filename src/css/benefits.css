@@ -1,62 +1,58 @@
-
-
 .section-title.benefits {
-    font-family: var(--second-family);
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: var(--second-family);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-        max-width: 704px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
 
-    @media screen and (min-width: 1440px) {
-        font-size: 40px;
-        max-width: 870px;
-    }
+  @media screen and (min-width: 1440px) {
+    font-size: 40px;
+    max-width: 870px;
+  }
 }
 
 .benefits-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 
-    @media screen and (min-width: 1440px) {
-        flex-direction: row;
-
-    }
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
 
 .benefits-list-item {
-    border: 1px solid var(--opacity-neutral-darkest-20);
-    padding: 32px 12px;
-    background-color: var(--color-neutral-lightest);
+  border: 1px solid var(--opacity-neutral-darkest-20);
+  padding: 32px 12px;
+  background-color: var(--color-neutral-lightest);
 
-
-    @media screen and (min-width: 1440px) {
-        flex-basis: calc((100% - 64px) / 3);
-    }
-
+  @media screen and (min-width: 1440px) {
+    flex-basis: calc((100% - 64px) / 3);
+  }
 }
 
 .benefits-list-item-title {
-    font-weight: 400;
-    font-family: var(--second-family);
-    font-size: 24px;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: var(--color-neutral-darkest);
+  font-weight: 400;
+  font-family: var(--second-family);
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-neutral-darkest);
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .benefits-list-item-text {
-    line-height: 1.5;
-    text-align: center;
-    color: var(--color-neutral-darkest);
+  font-family: var(--font-family);
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-neutral-darkest);
 }
