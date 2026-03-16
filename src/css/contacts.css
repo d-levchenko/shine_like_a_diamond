@@ -1,6 +1,5 @@
 .title-wrapper {
   display: flex;
-  flex-direction: column;
   flex-direction: column-reverse;
 }
 .section-subtitle {
@@ -11,7 +10,7 @@
   font-family: var(--font-family);
   margin-bottom: 16px;
 }
-.section-title {
+.form-section-title {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
@@ -37,7 +36,9 @@
   margin-bottom: 24px;
 }
 .contact-form-field-label {
+  font-family: var(--font-family);
   margin-bottom: 8px;
+  line-height: 1.5;
 }
 .contact-form-field-input {
   padding: 8px 12px;
@@ -86,7 +87,7 @@
 .submit-form-button {
   width: 100%;
   border: 1px solid var(--color-laser);
-  padding: 6px 0px;
+  height: 36px;
   background: var(--color-laser);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -111,13 +112,12 @@
 /* #endregion */
 
 /* #region ----------------------CONTACTS---------------------- */
-address {
-  font-family: var(--second-family);
-  font-style: normal;
-}
+
 .address-wrapper {
   display: flex;
   margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-style: normal;
 }
 
 .contacts-list {
@@ -143,6 +143,8 @@ address {
 }
 
 .contact-link {
+  font-family: var(--font-family);
+  line-height: 1.5;
   color: var(--color-scheme-1-text);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -166,15 +168,13 @@ address {
     flex-direction: row;
   }
   .contact-item {
-    flex: 1;
+    flex-basis: calc((100% - 50px) / 3);
   }
-
-  /* .contact-form {
-    max-width: 100%;
-  } */
-
   .submit-form-button {
     max-width: 249px;
+  }
+  .address-wrapper {
+    display: block;
   }
 }
 /* #endregion */
@@ -191,11 +191,12 @@ address {
     justify-content: center;
     gap: 32px;
   }
-  .form-wrapper {
-    width: 640px;
+  .contact-form {
+    flex-grow: 1;
   }
   .address-wrapper {
-    flex: 1;
+    max-width: 640px;
+
     margin-bottom: 0;
   }
   .contacts-list {
@@ -203,8 +204,7 @@ address {
     gap: 32px;
   }
   .contact-item {
-    display: flex;
-    flex-basis: 304px;
+    flex-basis: calc((100% - 32px) / 2);
   }
   .submit-form-button {
     width: 192px;
