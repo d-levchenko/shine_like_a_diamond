@@ -1,6 +1,5 @@
 .about-us-section {
   padding: 56px 0;
-  background: var(--color-scheme-2-background);
 
   @media screen and (min-width: 768px) {
     padding: 112px 0;
@@ -13,21 +12,11 @@
 
 .about-us-title {
   margin-bottom: 24px;
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--color-scheme-2-text);
 }
 
 .about-us-description {
   margin-bottom: 24px;
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-scheme-2-text);
 }
 
 .about-us-list {
@@ -44,11 +33,8 @@
 }
 
 .about-us-list-item-text {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-scheme-2-text);
 }
 
 .about-us-list-item:nth-child(1)::before {
