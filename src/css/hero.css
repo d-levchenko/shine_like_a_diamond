@@ -16,8 +16,12 @@
       url('/images/webp/hero/hero-mobile.webp') type('image/webp'),
       url('/images/jpeg/hero/hero-mobile.jpeg') type('image/jpeg')
     );
+  padding-top: 160px;
+  padding-bottom: 152px;
+}
 
-  @media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) {
+  .hero-container {
     background-image:
       linear-gradient(
         to bottom,
@@ -30,9 +34,11 @@
         url('/images/jpeg/hero/hero-mobile@2x.jpeg') type('image/jpeg')
       );
   }
+}
 
-  /* ---- TABLET ---- */
-  @media screen and (min-width: 768px) {
+/* ---- TABLET ---- */
+@media screen and (min-width: 768px) {
+  .hero-container {
     background-image:
       linear-gradient(
         to bottom,
@@ -44,23 +50,30 @@
         url('/images/webp/hero/hero-tablet.webp') type('image/webp'),
         url('/images/jpeg/hero/hero-tablet.jpeg') type('image/jpeg')
       );
-    @media screen and (min-resolution: 192dpi) {
-      background-image:
-        linear-gradient(
-          to bottom,
-          var(--opacity-neutral-darkest-40),
-          var(--opacity-neutral-darkest-40)
-        ),
-        image-set(
-          url('/images/avif/hero/hero-tablet@2x.avif') type('image/avif'),
-          url('/images/webp/hero/hero-tablet@2x.webp') type('image/webp'),
-          url('/images/jpeg/hero/hero-tablet@2x.jpeg') type('image/jpeg')
-        );
-    }
+    padding-top: 160px;
+    padding-bottom: 435px;
   }
+}
 
-  /* ---- DESCKTOP ---- */
-  @media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      image-set(
+        url('/images/avif/hero/hero-tablet@2x.avif') type('image/avif'),
+        url('/images/webp/hero/hero-tablet@2x.webp') type('image/webp'),
+        url('/images/jpeg/hero/hero-tablet@2x.jpeg') type('image/jpeg')
+      );
+  }
+}
+
+/* ---- DESCKTOP ---- */
+@media screen and (min-width: 1440px) {
+  .hero-container {
     background-image:
       linear-gradient(
         to bottom,
@@ -72,29 +85,24 @@
         url('/images/webp/hero/hero-desktop.webp') type('image/webp'),
         url('/images/jpeg/hero/hero-desktop.jpeg') type('image/jpeg')
       );
-    @media screen and (min-resolution: 192dpi) {
-      background-image:
-        linear-gradient(
-          to bottom,
-          var(--opacity-neutral-darkest-40),
-          var(--opacity-neutral-darkest-40)
-        ),
-        image-set(
-          url('/images/avif/hero/hero-desktop@2x.avif') type('image/avif'),
-          url('/images/webp/hero/hero-desktop@2x.webp') type('image/webp'),
-          url('/images/jpeg/hero/hero-desktop@2x.jpeg') type('image/jpeg')
-        );
-    }
+    padding-top: 224px;
+    padding-bottom: 360px;
   }
+}
 
-  padding: 160px 20px 152px;
-
-  @media screen and (min-width: 768px) {
-    padding: 160px 160px 435px 32px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding: 224px 800px 360px 64px;
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--opacity-neutral-darkest-40),
+        var(--opacity-neutral-darkest-40)
+      ),
+      image-set(
+        url('/images/avif/hero/hero-desktop@2x.avif') type('image/avif'),
+        url('/images/webp/hero/hero-desktop@2x.webp') type('image/webp'),
+        url('/images/jpeg/hero/hero-desktop@2x.jpeg') type('image/jpeg')
+      );
   }
 }
 
@@ -110,14 +118,21 @@
 
   color: var(--color-white);
 
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    max-width: 513px;
+  }
+
   @media screen and (min-width: 1440px) {
     font-size: 56px;
+    max-width: 640px;
   }
 }
 
 .hero-text {
   margin-bottom: 32px;
 
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
 
@@ -141,7 +156,6 @@
   color: var(--color-neutral-darkest);
 
   border: 1px solid var(--color-laser);
-  cursor: pointer;
   background: var(--color-laser);
 
   transition:
