@@ -36,6 +36,7 @@
   margin-bottom: 24px;
 }
 .contact-form-field-label {
+  font-family: var(--font-family);
   margin-bottom: 8px;
   line-height: 1.5;
 }
@@ -111,13 +112,12 @@
 /* #endregion */
 
 /* #region ----------------------CONTACTS---------------------- */
-address {
-  font-family: var(--second-family);
-  font-style: normal;
-}
+
 .address-wrapper {
   display: flex;
   margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-style: normal;
 }
 
 .contacts-list {
@@ -166,13 +166,15 @@ address {
     display: flex;
     gap: 25px;
     flex-direction: row;
-    flex-grow: 1;
   }
   .contact-item {
     flex-basis: calc((100% - 50px) / 3);
   }
   .submit-form-button {
     max-width: 249px;
+  }
+  .address-wrapper {
+    display: block;
   }
 }
 /* #endregion */
@@ -193,7 +195,8 @@ address {
     width: 640px;
   }
   .address-wrapper {
-    flex: 1;
+    max-width: 640px;
+
     margin-bottom: 0;
   }
   .contacts-list {
@@ -201,7 +204,6 @@ address {
     gap: 32px;
   }
   .contact-item {
-    display: flex;
     flex-basis: calc((100% - 32px) / 2);
   }
   .submit-form-button {
