@@ -1,20 +1,11 @@
 .showcase-title {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
   text-transform: capitalize;
   margin-bottom: 24px;
 }
 
 .showcase-description {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
   text-align: center;
   color: var(--color-scheme-1-text);
   margin-bottom: 40px;
