@@ -1,7 +1,6 @@
 .footer {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: var(--color-scheme-1-background);
 }
 
 .footer .container {
@@ -37,12 +36,13 @@
   margin: 0 auto;
   margin-bottom: 32px;
   padding: 15px 7px;
-  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     width: 342px;
     height: 146px;
     padding: 23px 12px;
   }
+
   @media screen and (min-width: 1440px) {
     width: 84px;
     height: 36px;
@@ -55,7 +55,7 @@
 .logo-icon {
   width: 201px;
   height: 62px;
-  fill: var(--color-neutral-darkest);
+  fill: var(--color-scheme-2-text);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
@@ -103,7 +103,7 @@
 .socials-icon {
   width: 32px;
   height: 32px;
-  fill: var(--color-neutral-darkest);
+  fill: var(--color-scheme-2-text);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1440px) {
@@ -130,10 +130,7 @@
 }
 
 .nav-item {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -142,9 +139,7 @@
 
 .nav-link {
   display: block;
-  color: var(--color-neutral-darkest);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 
 .nav-link:hover,
@@ -167,8 +162,5 @@
 
 .privacy-policy-text {
   padding-top: 32px;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
 }
