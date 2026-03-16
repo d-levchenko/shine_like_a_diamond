@@ -1,12 +1,6 @@
 .testimonials-title {
   margin-bottom: 24px;
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
 }
 @media screen and (min-width: 1440px) {
   .testimonials-title {
@@ -16,12 +10,7 @@
 
 .testimonials-text {
   margin-bottom: 40px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  color: var(--color-scheme-2-text);
 }
 
 @media screen and (min-width: 1440px) {
@@ -57,7 +46,7 @@
 
 @media screen and (min-width: 768px) {
   .testimonials-wrapper {
-    width: 248px;
+    width: 250px;
     height: 260px;
   }
 }
@@ -83,11 +72,7 @@
 
 .testimonials-review {
   margin-bottom: 24px;
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
 }
 
 @media screen and (min-width: 768px) {
@@ -102,9 +87,5 @@
   }
 }
 .testimonials-author {
-  font-family: var(--font-family);
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
 }
